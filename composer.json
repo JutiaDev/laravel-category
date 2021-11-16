@@ -1,5 +1,5 @@
 {
-    "name": "jutia-dev/category",
+    "name": "jutia-dev/laravel-category",
     "description": "Associate Laravel models to a category/categories",
     "type": "library",
     "license": "MIT",
