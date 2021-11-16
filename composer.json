@@ -1,16 +1,22 @@
 {
     "name": "jutia-dev/laravel-category",
     "description": "Associate Laravel models to a category/categories",
-    "type": "library",
+    "keywords": [
+        "jutia",
+        "laravel",
+        "category",
+        "categories"
+    ],
+    "homepage": "https://github.com/JutiaDev/laravel-category",
     "license": "MIT",
     "authors": [
         {
             "name": "Jutia",
             "email": "dev@jutia.ma",
-            "homepage": "https://jutia.ma"
+            "homepage": "https://jutia.ma",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php" : ">=7.3",
         "illuminate/database": "^8.0",
@@ -18,11 +24,32 @@
     },
     "require-dev": {},
     "autoload": {
-        "files": [
-            "src/helpers.php"
-        ],
         "psr-4": {
             "JutiaDev\\Category\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JutiaDev\\Category\\Test\\": "tests"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JutiaDev\\Category\\CategoryServiceProvider"
+            ]
+        },
+        "branch-alias": {}
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
