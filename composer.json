@@ -22,7 +22,10 @@
         "illuminate/database": "^8.0",
         "illuminate/filesystem": "^8.0"
     },
-    "require-dev": {},
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
     "autoload": {
         "psr-4": {
             "JutiaDev\\Category\\": "src"
@@ -33,7 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "JutiaDev\\Category\\Test\\": "tests"
+            "JutiaDev\\Category\\Test\\": "tests/"
         }
     },
     "extra": {
